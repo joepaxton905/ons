@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 
 from http.server import HTTPServer, BaseHTTPRequestHandler
-import logging, ngrok
+import logging
+from pyngrok import ngrok
 
 
 class HelloHandler(BaseHTTPRequestHandler):
@@ -20,4 +21,4 @@ ngrok.listen(server)
 server.serve_forever()
 
 
-# NGROK_AUTHTOKEN=2prpYKE6yyATO2lpViDlsSHs2Sl_3q1oZr1zvznTfKHFeps9t python example.py
+# NGROK_AUTHTOKEN=2prpYKE6yyATO2lpViDlsSHs2Sl_3q1oZr1zvznTfKHFeps9t python3 ons.py
